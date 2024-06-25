@@ -40,9 +40,12 @@ body {
   margin: 10px 0;
   transition: all 0.3s;
 }
-.btn:hover {
+.btn:hover:no([disabled]) {
   background: #222;
   color: #fff;
+}
+.btn:disabled {
+  cursor: not-allowed;
 }
 #next-btn {
   background: #001e4d;
@@ -55,4 +58,12 @@ body {
   border-radius: 4px;
   cursor: pointer;
   display: none;
+}
+.correct {
+  background: #9aeabc;
+  border: 1px solid #002e14;
+}
+.incorrect {
+  background: #ff9393;
+  border: 1px solid #440000;
 }
